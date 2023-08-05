@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { promiseHooks } from 'v8';
+import { rejects } from 'assert';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blankproject';
-
+  /*appStatus = new promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('stable');
+    }, 2000);
+  });*/
   servers :any = [
     {
       instanceType: 'medium',
