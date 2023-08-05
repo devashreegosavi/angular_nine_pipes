@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { promiseHooks } from 'v8';
-import { rejects } from 'assert';
+
 
 @Component({
   selector: 'app-root',
